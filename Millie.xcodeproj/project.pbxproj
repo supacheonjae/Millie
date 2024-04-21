@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D5069982BD0E7EC000FEF6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069972BD0E7EC000FEF6C /* AppDelegate.m */; };
+		2D5069A12BD0E7EC000FEF6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D50699F2BD0E7EC000FEF6C /* Main.storyboard */; };
+		2D5069A32BD0E7ED000FEF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5069A22BD0E7ED000FEF6C /* Assets.xcassets */; };
+		2D5069A62BD0E7ED000FEF6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5069A42BD0E7ED000FEF6C /* LaunchScreen.storyboard */; };
+		2D5069A92BD0E7ED000FEF6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069A82BD0E7ED000FEF6C /* main.m */; };
+		2D5069B32BD0E7ED000FEF6C /* MillieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069B22BD0E7ED000FEF6C /* MillieTests.m */; };
+		2D5069CE2BD0E9A5000FEF6C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069CD2BD0E9A5000FEF6C /* News.swift */; };
+		2D5069D12BD37139000FEF6C /* TopHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069D02BD37139000FEF6C /* TopHeadlinesViewController.swift */; };
+		2D5069D52BD3754E000FEF6C /* NewsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069D42BD3754E000FEF6C /* NewsServices.swift */; };
+		2D5069D72BD376A6000FEF6C /* TopHeadlinesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069D62BD376A6000FEF6C /* TopHeadlinesService.swift */; };
+		2D5069DB2BD4AF0D000FEF6C /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5069DA2BD4AF0D000FEF6C /* RxAlamofire */; };
+		2D5069DD2BD4B1CE000FEF6C /* TopHeadlinesRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069DC2BD4B1CE000FEF6C /* TopHeadlinesRestAPI.swift */; };
+		2D5069DF2BD4B2D5000FEF6C /* TopHeadlinesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069DE2BD4B2D5000FEF6C /* TopHeadlinesMock.swift */; };
+		2D5069E12BD4B31A000FEF6C /* top-headlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D5069E02BD4B31A000FEF6C /* top-headlines.json */; };
+		2D5069E72BD4B5D7000FEF6C /* TopHeadlinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069E62BD4B5D7000FEF6C /* TopHeadlinesViewModel.swift */; };
+		2D5069EC2BD4B664000FEF6C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069EB2BD4B664000FEF6C /* ViewModel.swift */; };
+		2D5069F22BD4C452000FEF6C /* TopHeadlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069F02BD4C452000FEF6C /* TopHeadlineCell.swift */; };
+		2D5069F32BD4C452000FEF6C /* TopHeadlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5069F12BD4C452000FEF6C /* TopHeadlineCell.xib */; };
+		2D5069F72BD4CA05000FEF6C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5069F62BD4CA05000FEF6C /* Realm */; };
+		2D5069F92BD4CA05000FEF6C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D5069F82BD4CA05000FEF6C /* RealmSwift */; };
+		2D5069FC2BD4CAF8000FEF6C /* NewsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069FB2BD4CAF8000FEF6C /* NewsDB.swift */; };
+		2D5069FE2BD4CB3A000FEF6C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5069FD2BD4CB3A000FEF6C /* RealmManager.swift */; };
+		2D506A012BD4E00E000FEF6C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2D506A002BD4E00E000FEF6C /* AlamofireImage */; };
+		2D506A032BD4EC04000FEF6C /* NewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D506A022BD4EC04000FEF6C /* NewsWebViewController.swift */; };
+		2D506A062BD4F72D000FEF6C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D506A052BD4F72D000FEF6C /* ImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D5069AF2BD0E7ED000FEF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D50698B2BD0E7EC000FEF6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5069922BD0E7EC000FEF6C;
+			remoteInfo = Millie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D5069932BD0E7EC000FEF6C /* Millie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5069962BD0E7EC000FEF6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D5069972BD0E7EC000FEF6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D5069A02BD0E7EC000FEF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D5069A22BD0E7ED000FEF6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D5069A52BD0E7ED000FEF6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D5069A72BD0E7ED000FEF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5069A82BD0E7ED000FEF6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D5069AE2BD0E7ED000FEF6C /* MillieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MillieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D5069B22BD0E7ED000FEF6C /* MillieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MillieTests.m; sourceTree = "<group>"; };
+		2D5069CC2BD0E9A5000FEF6C /* Millie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Millie-Bridging-Header.h"; sourceTree = "<group>"; };
+		2D5069CD2BD0E9A5000FEF6C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		2D5069D02BD37139000FEF6C /* TopHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewController.swift; sourceTree = "<group>"; };
+		2D5069D42BD3754E000FEF6C /* NewsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServices.swift; sourceTree = "<group>"; };
+		2D5069D62BD376A6000FEF6C /* TopHeadlinesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesService.swift; sourceTree = "<group>"; };
+		2D5069DC2BD4B1CE000FEF6C /* TopHeadlinesRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesRestAPI.swift; sourceTree = "<group>"; };
+		2D5069DE2BD4B2D5000FEF6C /* TopHeadlinesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesMock.swift; sourceTree = "<group>"; };
+		2D5069E02BD4B31A000FEF6C /* top-headlines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "top-headlines.json"; sourceTree = "<group>"; };
+		2D5069E62BD4B5D7000FEF6C /* TopHeadlinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesViewModel.swift; sourceTree = "<group>"; };
+		2D5069EB2BD4B664000FEF6C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2D5069F02BD4C452000FEF6C /* TopHeadlineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlineCell.swift; sourceTree = "<group>"; };
+		2D5069F12BD4C452000FEF6C /* TopHeadlineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeadlineCell.xib; sourceTree = "<group>"; };
+		2D5069FB2BD4CAF8000FEF6C /* NewsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDB.swift; sourceTree = "<group>"; };
+		2D5069FD2BD4CB3A000FEF6C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		2D506A022BD4EC04000FEF6C /* NewsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebViewController.swift; sourceTree = "<group>"; };
+		2D506A052BD4F72D000FEF6C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D5069902BD0E7EC000FEF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5069F92BD4CA05000FEF6C /* RealmSwift in Frameworks */,
+				2D506A012BD4E00E000FEF6C /* AlamofireImage in Frameworks */,
+				2D5069F72BD4CA05000FEF6C /* Realm in Frameworks */,
+				2D5069DB2BD4AF0D000FEF6C /* RxAlamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5069AB2BD0E7ED000FEF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D50698A2BD0E7EC000FEF6C = {
+			isa = PBXGroup;
+			children = (
+				2D5069952BD0E7EC000FEF6C /* Millie */,
+				2D5069B12BD0E7ED000FEF6C /* MillieTests */,
+				2D5069942BD0E7EC000FEF6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D5069942BD0E7EC000FEF6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069932BD0E7EC000FEF6C /* Millie.app */,
+				2D5069AE2BD0E7ED000FEF6C /* MillieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5069952BD0E7EC000FEF6C /* Millie */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069FA2BD4CAD2000FEF6C /* DB */,
+				2D5069CB2BD0E976000FEF6C /* Entities */,
+				2D5069EA2BD4B64B000FEF6C /* Protocol */,
+				2D5069D32BD3752D000FEF6C /* Services */,
+				2D5069ED2BD4BFDD000FEF6C /* View */,
+				2D5069E52BD4B5A3000FEF6C /* ViewModel */,
+				2D506A042BD4F716000FEF6C /* Util */,
+				2D5069962BD0E7EC000FEF6C /* AppDelegate.h */,
+				2D5069972BD0E7EC000FEF6C /* AppDelegate.m */,
+				2D5069A22BD0E7ED000FEF6C /* Assets.xcassets */,
+				2D5069A72BD0E7ED000FEF6C /* Info.plist */,
+				2D5069A42BD0E7ED000FEF6C /* LaunchScreen.storyboard */,
+				2D50699F2BD0E7EC000FEF6C /* Main.storyboard */,
+				2D5069A82BD0E7ED000FEF6C /* main.m */,
+				2D5069CC2BD0E9A5000FEF6C /* Millie-Bridging-Header.h */,
+			);
+			path = Millie;
+			sourceTree = "<group>";
+		};
+		2D5069B12BD0E7ED000FEF6C /* MillieTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069B22BD0E7ED000FEF6C /* MillieTests.m */,
+			);
+			path = MillieTests;
+			sourceTree = "<group>";
+		};
+		2D5069CB2BD0E976000FEF6C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069CD2BD0E9A5000FEF6C /* News.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2D5069D32BD3752D000FEF6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069D42BD3754E000FEF6C /* NewsServices.swift */,
+				2D5069D62BD376A6000FEF6C /* TopHeadlinesService.swift */,
+				2D5069DC2BD4B1CE000FEF6C /* TopHeadlinesRestAPI.swift */,
+				2D5069DE2BD4B2D5000FEF6C /* TopHeadlinesMock.swift */,
+				2D5069E02BD4B31A000FEF6C /* top-headlines.json */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D5069E52BD4B5A3000FEF6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069E62BD4B5D7000FEF6C /* TopHeadlinesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2D5069EA2BD4B64B000FEF6C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069EB2BD4B664000FEF6C /* ViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2D5069ED2BD4BFDD000FEF6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069EF2BD4C405000FEF6C /* Cell */,
+				2D5069EE2BD4C3F8000FEF6C /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D5069EE2BD4C3F8000FEF6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D506A022BD4EC04000FEF6C /* NewsWebViewController.swift */,
+				2D5069D02BD37139000FEF6C /* TopHeadlinesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2D5069EF2BD4C405000FEF6C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069F02BD4C452000FEF6C /* TopHeadlineCell.swift */,
+				2D5069F12BD4C452000FEF6C /* TopHeadlineCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2D5069FA2BD4CAD2000FEF6C /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2D5069FB2BD4CAF8000FEF6C /* NewsDB.swift */,
+				2D5069FD2BD4CB3A000FEF6C /* RealmManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		2D506A042BD4F716000FEF6C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2D506A052BD4F72D000FEF6C /* ImageLoader.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D5069922BD0E7EC000FEF6C /* Millie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5069C22BD0E7ED000FEF6C /* Build configuration list for PBXNativeTarget "Millie" */;
+			buildPhases = (
+				2D50698F2BD0E7EC000FEF6C /* Sources */,
+				2D5069902BD0E7EC000FEF6C /* Frameworks */,
+				2D5069912BD0E7EC000FEF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Millie;
+			packageProductDependencies = (
+				2D5069DA2BD4AF0D000FEF6C /* RxAlamofire */,
+				2D5069F62BD4CA05000FEF6C /* Realm */,
+				2D5069F82BD4CA05000FEF6C /* RealmSwift */,
+				2D506A002BD4E00E000FEF6C /* AlamofireImage */,
+			);
+			productName = Millie;
+			productReference = 2D5069932BD0E7EC000FEF6C /* Millie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D5069AD2BD0E7ED000FEF6C /* MillieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5069C52BD0E7ED000FEF6C /* Build configuration list for PBXNativeTarget "MillieTests" */;
+			buildPhases = (
+				2D5069AA2BD0E7ED000FEF6C /* Sources */,
+				2D5069AB2BD0E7ED000FEF6C /* Frameworks */,
+				2D5069AC2BD0E7ED000FEF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D5069B02BD0E7ED000FEF6C /* PBXTargetDependency */,
+			);
+			name = MillieTests;
+			productName = MillieTests;
+			productReference = 2D5069AE2BD0E7ED000FEF6C /* MillieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D50698B2BD0E7EC000FEF6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2D5069922BD0E7EC000FEF6C = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					2D5069AD2BD0E7ED000FEF6C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2D5069922BD0E7EC000FEF6C;
+					};
+				};
+			};
+			buildConfigurationList = 2D50698E2BD0E7EC000FEF6C /* Build configuration list for PBXProject "Millie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D50698A2BD0E7EC000FEF6C;
+			packageReferences = (
+				2D5069CF2BD370E3000FEF6C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2D5069D82BD4AE81000FEF6C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				2D5069D92BD4AF0D000FEF6C /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				2D5069F52BD4CA05000FEF6C /* XCRemoteSwiftPackageReference "realm-swift" */,
+				2D5069FF2BD4E00E000FEF6C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 2D5069942BD0E7EC000FEF6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5069922BD0E7EC000FEF6C /* Millie */,
+				2D5069AD2BD0E7ED000FEF6C /* MillieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D5069912BD0E7EC000FEF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5069F32BD4C452000FEF6C /* TopHeadlineCell.xib in Resources */,
+				2D5069A62BD0E7ED000FEF6C /* LaunchScreen.storyboard in Resources */,
+				2D5069A32BD0E7ED000FEF6C /* Assets.xcassets in Resources */,
+				2D5069A12BD0E7EC000FEF6C /* Main.storyboard in Resources */,
+				2D5069E12BD4B31A000FEF6C /* top-headlines.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5069AC2BD0E7ED000FEF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D50698F2BD0E7EC000FEF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5069D12BD37139000FEF6C /* TopHeadlinesViewController.swift in Sources */,
+				2D5069982BD0E7EC000FEF6C /* AppDelegate.m in Sources */,
+				2D506A062BD4F72D000FEF6C /* ImageLoader.swift in Sources */,
+				2D5069FE2BD4CB3A000FEF6C /* RealmManager.swift in Sources */,
+				2D5069E72BD4B5D7000FEF6C /* TopHeadlinesViewModel.swift in Sources */,
+				2D506A032BD4EC04000FEF6C /* NewsWebViewController.swift in Sources */,
+				2D5069DD2BD4B1CE000FEF6C /* TopHeadlinesRestAPI.swift in Sources */,
+				2D5069FC2BD4CAF8000FEF6C /* NewsDB.swift in Sources */,
+				2D5069DF2BD4B2D5000FEF6C /* TopHeadlinesMock.swift in Sources */,
+				2D5069CE2BD0E9A5000FEF6C /* News.swift in Sources */,
+				2D5069D52BD3754E000FEF6C /* NewsServices.swift in Sources */,
+				2D5069F22BD4C452000FEF6C /* TopHeadlineCell.swift in Sources */,
+				2D5069A92BD0E7ED000FEF6C /* main.m in Sources */,
+				2D5069EC2BD4B664000FEF6C /* ViewModel.swift in Sources */,
+				2D5069D72BD376A6000FEF6C /* TopHeadlinesService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5069AA2BD0E7ED000FEF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5069B32BD0E7ED000FEF6C /* MillieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D5069B02BD0E7ED000FEF6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D5069922BD0E7EC000FEF6C /* Millie */;
+			targetProxy = 2D5069AF2BD0E7ED000FEF6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D50699F2BD0E7EC000FEF6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5069A02BD0E7EC000FEF6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D5069A42BD0E7ED000FEF6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D5069A52BD0E7ED000FEF6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D5069C02BD0E7ED000FEF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D5069C12BD0E7ED000FEF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D5069C32BD0E7ED000FEF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Millie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayun.Millie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Millie/Millie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D5069C42BD0E7ED000FEF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Millie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayun.Millie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Millie/Millie-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D5069C62BD0E7ED000FEF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayun.MillieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Millie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Millie";
+			};
+			name = Debug;
+		};
+		2D5069C72BD0E7ED000FEF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hayun.MillieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Millie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Millie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D50698E2BD0E7EC000FEF6C /* Build configuration list for PBXProject "Millie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5069C02BD0E7ED000FEF6C /* Debug */,
+				2D5069C12BD0E7ED000FEF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5069C22BD0E7ED000FEF6C /* Build configuration list for PBXNativeTarget "Millie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5069C32BD0E7ED000FEF6C /* Debug */,
+				2D5069C42BD0E7ED000FEF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D5069C52BD0E7ED000FEF6C /* Build configuration list for PBXNativeTarget "MillieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5069C62BD0E7ED000FEF6C /* Debug */,
+				2D5069C72BD0E7ED000FEF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D5069CF2BD370E3000FEF6C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.1;
+			};
+		};
+		2D5069D82BD4AE81000FEF6C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.0.0;
+			};
+		};
+		2D5069D92BD4AF0D000FEF6C /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.0;
+			};
+		};
+		2D5069F52BD4CA05000FEF6C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.49.2;
+			};
+		};
+		2D5069FF2BD4E00E000FEF6C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D5069DA2BD4AF0D000FEF6C /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D5069D92BD4AF0D000FEF6C /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		2D5069F62BD4CA05000FEF6C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D5069F52BD4CA05000FEF6C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D5069F82BD4CA05000FEF6C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D5069F52BD4CA05000FEF6C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D506A002BD4E00E000FEF6C /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D5069FF2BD4E00E000FEF6C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D50698B2BD0E7EC000FEF6C /* Project object */;
+}
